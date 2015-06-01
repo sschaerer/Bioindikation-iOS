@@ -1,0 +1,56 @@
+<ion-view title="Nutzungseinflüsse" >
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/10.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1); landschaftIndex()" href="#/tab/datenaufnahme">
+                keine erkennbar 
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/10.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2); landschaftIndex()" href="#/tab/datenaufnahme">
+                geringe Auswirkungen (z.B. Wasserentnahme) 
+
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/10.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3); landschaftIndex()" href="#/tab/datenaufnahme">
+               starke Auswirkungen (z.B. Gülleeinfluss, etc.)
+
+            </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river9" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

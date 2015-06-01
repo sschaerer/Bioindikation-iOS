@@ -1,0 +1,56 @@
+<ion-view title="Uferneigung und -gliederung">
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/6.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river7">
+                vielfältig, abwechselnd flache und steile Partien
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/6.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river7">
+                abwechselnd künstliche und natürlich
+
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/6.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river7">
+völlig einheitlich, gleichförmig           
+</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river5" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

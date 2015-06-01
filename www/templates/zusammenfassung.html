@@ -1,0 +1,73 @@
+<ion-view title="Zusammenfassung" id="datenaufnahme">
+
+    <ion-content padding="true">
+
+        <div class="list">
+
+            <div class="item item-divider">
+                Allgemeine Daten
+            </div>
+
+            <a class="item" href="">
+        Bachname 
+        <span class="item-note">
+      {{allgemeineDaten.rivername}}
+    </span>
+      </a>
+
+            <a class="item" href="">
+        Name der Gruppe/Schule 
+        <span class="item-note">
+      {{allgemeineDaten.organisation}}
+    </span>
+      </a>
+
+            <a class="item" href="">
+        Kommentare 
+        <span class="item-note">
+      {{allgemeineDaten.comments}}
+    </span>
+      </a>
+
+
+            <div class="item item-divider">
+                Durchschnitt Bachbeurteilung
+            </div>
+
+            <a class="item" href="">
+        Landschaftsökologische Bachbeurteilung
+        <span class="item-note">
+      {{allgemeineDaten.LandscapeEcology}}
+    </span>
+      </a>
+
+            <div class="item item-divider">
+                Gewässergüte
+            </div>
+
+            <a class="item" href="">
+        biologische Gewässergüte 
+        <span class="item-note">
+      {{allgemeineDaten.BioWaterQuality}}
+    </span>
+      </a>
+
+        </div>
+
+        <div id="speichern">
+
+            <p>
+                <button class="button button-positive" ng-click="addFeatureJetzt()" href="#/tab/home">Daten hochladen</button>
+                <button class="button button-positive" ng-click="storage()" href="#/tab/home">Daten speichern</button>
+            </p>
+            <p>
+                <button class="button button-positive" ng-click="loeschenIndex()" href="#/tab/datenaufnahme">Zurück</button>
+                <button class="button button-positive" ng-click="Abbrechen()">Abbrechen</button>
+            </p>
+
+        </div>
+
+
+
+    </ion-content>
+</ion-view>

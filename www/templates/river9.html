@@ -1,0 +1,54 @@
+<ion-view title="Durchwanderbarkeit für Fische" >
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/9.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river10">
+                gewährleistet (ausser bei Wassefällen)
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/9.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river10">
+                nur wenig behindert (Schwellen kleiner 20cm)
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/9.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river10">
+              hohe Schwellen (grösser als 0.70 m)
+            </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river8" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

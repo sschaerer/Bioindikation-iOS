@@ -1,0 +1,55 @@
+<ion-view title="Bachsohle">
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/5.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river6">
+                sehr vielgestaltig, natürlich 
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/5.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river6">
+                teilweise natürlich, teilweise künstlich
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/5.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river6">
+               künstlich, einheitlich 
+            </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river4" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

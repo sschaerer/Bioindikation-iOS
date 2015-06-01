@@ -1,0 +1,84 @@
+<ion-view title="Allgemeine Daten - Manuelle Koordinaten">
+
+    <ion-content padding="true">
+
+        <body>
+
+            <p>Trage hier die allgemeinen Daten des Gewässers ein:</p>
+
+            <div id="general">
+
+                <form name="general_form" class="css-form" novalidate>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Name des Baches</span>
+                        <input type="text" placeholder="Musterbach" name="rivername" ng-model="rivername" required/>
+                        <div class="error" ng-show="general_form.rivername.$dirty && general_form.rivername.$invalid">
+                            <small class="error" ng-show="general_form.rivername.$error.required">
+                                Dies ist ein Pflichtfeld </small>
+                        </div>
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Name der Organisation oder Schule</span>
+                        <input type="text" placeholder="Musterorganisation" name="organisation" ng-model="organisation" required>
+                        <div class="error" ng-show="general_form.organisation.$dirty && general_form.organisation.$invalid">
+                            <small class="error" ng-show="general_form.organisation.$error.required">
+                                Dies ist ein Pflichtfeld </small>
+                        </div>
+
+                    </label>
+
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Koordinaten: Breitengrad (z.B: 46.9402xxx)</span>
+                        <input type="number" step="any" min="45.818031" max="47.808264" placeholder="46.9402xxx" name="lat" ng-model="lat" required>
+                        <div class="error" ng-show="general_form.lat.$dirty && general_form.lat.$invalid">
+                            <small class="error" ng-show="general_form.lat.$error.required">
+                                Dies ist ein Pflichtfeld </small>
+                            <small class="error" ng-show="general_form.lat.$error.min">
+                                Bitte gib einen Wert grösser als 45.818031 ein </small>
+                            <small class="error" ng-show="general_form.lat.$error.max">
+                                Bitte gib einen Wert kleiner als 47.808264 ein </small>
+
+                        </div>
+
+                    </label>
+
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Koordinaten: Längengrad (z.B: 7.2678xxx)</span>
+                        <input type="number" step="any" min="5.956303" max="10.491944" placeholder="7.2678xxx" name="long" ng-model="long" required>
+                        <div class="error" ng-show="general_form.long.$dirty && general_form.long.$invalid">
+                            <small class="error" ng-show="general_form.long.$error.required">
+                                Dies ist ein Pflichtfeld </small>
+                            <small class="error" ng-show="general_form.long.$error.min">
+                                Bitte gib einen Wert grösser als 5.956303 ein </small>
+                            <small class="error" ng-show="general_form.long.$error.max">
+                                Bitte gib einen Wert kleiner als 10.491944 ein </small>
+
+                        </div>
+                        </label>
+                    <p>Du kannst den Längen- und Breitengrad auf folgender Seite auslesen. Suche dazu deinen Bachabschnitt auf der Karte. Die Position erhältst du, wenn du länger auf den Standort klickst. Du brauchst die Koordinaten WGS84.</p>
+                   
+                    <ul><li><a class="button button-positive" id="coords" name="http://map.geo.admin.ch/" ng-click="openLink('coords')">Koordinaten finden</a> </li></ul>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Kommentare</span>
+                            <textarea type="text" placeholder="Besondere Umstände, kürzliche extreme Wettereinflüsse, Bauarbeiten, andere Umwelteinflüsse, etc..." ng-model="comments" style="height: 200px"></textarea>
+                        </label>      
+                </form>
+
+                <div id="speichern">
+
+                    <ul>
+                        <li>
+
+                            <a type="submit" ng-disabled="general_form.$invalid" class="button button-positive" href="#/tab/river1" ng-click="getDate(); allgemeinSpeichern(rivername, organisation, comments, lat, long)">Weiter</a>
+                            <a class="button button-positive" href="javascript:history.go(-1)">Zurück</a>
+                            <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </body>
+    </ion-content>
+</ion-view>

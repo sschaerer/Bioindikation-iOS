@@ -1,0 +1,38 @@
+<ion-view title="Home" id="home">
+
+    <ion-content padding="true" ng-init="checkLocalStorage()">
+        
+        <ul>
+            <li>
+                <img src="img/GLOBE_Logo.jpg" style="max-width: 80%; height: 75px">
+            </li>
+        </ul>
+        <h3>Bestimmung der Gewässergüte von Fliessgewässern</h3>
+
+        <ul>
+            <p>
+
+                Diese App liefert dir durch Tutorial-Videos eine einfach Anleitung zur Bestimmung der Wasserqualität eines Baches oder Flusses. Weiter beurteilst du den Bach anhand von verschiedenen Bildern auf seine Beeinflussung durch den Menschen.</p>
+            <p>Dazu schaust du dir zuerst die Schritt-Für-Schritt-Anleitungen in dieser App an. Starte am Besten mit dem Video "Material".</p>
+
+            <li><a class="button button-positive" href="#/tab/tutorial">zu den Tutorial-Videos</a>
+            </li>
+
+            <!-- &shy gibt eine mögliche Stelle für eine Silbentrennung an-->
+
+            <p>Anschliessend geht es zur Datenaufnahme. Halte dich dabei an die in Hinweise und Bilder auf den einzelnen Seiten und führe die landschafts&shy;ökologische Beurteilung durch.</p>
+            <li><a class="button button-positive" href="#/tab/general">zur Datenaufnahme</a>
+            </li>
+            <p>Zum Schluss werden deine Daten in eine Datenbank hochgeladen und du kannst sie dort mit anderen Werten von anderen Gewässern vergleichen.</p>
+            
+            <p>Grundlage für diese App ist die Anleitungs-Broschüre "Bioindikation Fliessgewässer" von Globe Schweiz. Auf folgender Seite findest du alle wichtigen Informationen zu diesem Thema.</p>
+            
+            <li><a class="button button-positive" id="Bioindikation" name="http://www.globe-swiss.ch/de/Themen/Bioindikation_Bach-Fluss/Handbucher/" ng-click="openLink('Bioindikation')">Bioindikation Fliessgewässer</a> </li>
+                
+                
+            <p>Wir wünschen dir viel Spass und Erfolg bei der Durchführung der Untersuchung.</p>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

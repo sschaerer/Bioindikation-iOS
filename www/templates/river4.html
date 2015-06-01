@@ -1,0 +1,58 @@
+<ion-view title="Wasserdurchfluss" >
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/4.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river5">
+                stark abwechselnd (mit stehendem Wasser)
+
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/4.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river5">
+                abwechselnd (ohne stehendes Wasser)
+
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/4.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river5">
+               einheitliche 
+Durchflussgeschwindigkeit
+            </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river3" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

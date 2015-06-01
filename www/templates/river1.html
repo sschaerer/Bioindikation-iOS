@@ -1,0 +1,43 @@
+<ion-view title="Bachverlauf" id="general">
+
+    <ion-content padding="true">
+
+
+
+
+        <p>Auf den folgenden zehn Seiten beurteilst du den Bach aufgrund von Bildern auf seine Einflüsse durch den Menschen. Entscheide auf jeder Seite, welches Bild am ehesten dem Bach entspricht. <span style="font-weight: bold;">Wichtig:</span> Die Überschriften und Buttons helfen dir, worauf du bei deinem Bach achten musst.</p>
+
+
+        <div id="river">
+            <ul>
+                <li>
+                    <img src="img/riverGross/1.1.JPG">
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river2">natürlich mäandrierend, schlängelnd</a>
+                </li>
+                <li>
+                    <img src="img/riverGross/1.2.JPG">
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river2">Korrekturen sichtbar, bogig geschwungen</a>
+                </li>
+                <li>
+                    <img src="img/riverGross/1.3.JPG">
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river2">gestreckt, kanalisiert</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/general" ng-click="loeschenAllgDaten()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>

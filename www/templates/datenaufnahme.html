@@ -1,0 +1,247 @@
+<ion-view title="Datenaufnahme Gewässergüte">
+
+    <ion-content padding="true">
+
+        <div id="datenaufnahme">
+
+            <p>Klicke auf die Bilder, um sie zu vergrössern. Trage die Anzahl Formen/Arten in die Felder ein, welche du bei den jeweiligen Leitformen findest. Trage in die Felder, wo du keine Arten gefunden hast, den Wert 0 ein!</p>
+
+            <div class="list">
+                <div id="bilder">
+                    <form name="insect_form" class="css-form" novalidate>
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Steinfliegenlarve.jpg" title="Steinfliegenlarve 1">
+                                <img src="img/Leitformen/LeitformenThumb/thumbSteinfliegenlarve.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Steinfliegenlarven</span>
+                            <input type="number" ng-model="insectDatenEingabe[0]" placeholder="Anzahl Leitformen" name="insect1" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect1.$dirty && insect_form.insect1.$invalid">
+                                <small class="error" ng-show="insect_form.insect1.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect1.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect1.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Koecherfliegenlarve.jpg" title="Köcherfliegenlarve 1">
+                                <img src="img/Leitformen/LeitformenThumb/thumbKoecherfliegenlarve.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Köcherfliegenlarven </span>
+                            <input type="number" ng-model="insectDatenEingabe[1]" placeholder="Anzahl Leitformen" name="insect2" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect2.$dirty && insect_form.insect2.$invalid">
+                                <small class="error" ng-show="insect_form.insect2.$error.required">
+                                Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect2.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect2.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Eintagsfliegenlarve1.jpg" title="Eintagsfliegenlarve 1">
+                                <img src="img/Leitformen/LeitformenThumb/thumbEintagsfliegenlarve1.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Eintagsfliegenlarve2.jpg" title="Eintagsfliegenlarve 2">
+                                <img src="img/Leitformen/LeitformenThumb/thumbEintagsfliegenlarve2.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Eintagsfliegenlarve3.jpg" title="Eintagsfliegenlarve 3">
+                                <img src="img/Leitformen/LeitformenThumb/thumbEintagsfliegenlarve3.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Eintagsfliegenlarven</span>
+                            <input type="number" ng-model="insectDatenEingabe[2]" placeholder="Anzahl Leitformen" name="insect3" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect3.$dirty && insect_form.insect3.$invalid">
+                                <small class="error" ng-show="insect_form.insect3.$error.required">
+                                Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect3.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect3.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Flohkrebs.jpg" title="Flohkrebs">
+                                <img src="img/Leitformen/LeitformenThumb/thumbFlohkrebs.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Flohkrebse </span>
+                            <input type="number" ng-model="insectDatenEingabe[3]" placeholder="Anzahl Leitformen" name="insect4" min="0" max="10" required>
+                            <div class="error" ng-show="insect_form.insect4.$dirty && insect_form.insect4.$invalid">
+                                <small class="error" ng-show="insect_form.insect4.$error.required">
+                                Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect4.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect4.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 10 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Wasserassel1.jpg" title="Wasserassel">
+                                <img src="img/Leitformen/LeitformenThumb/thumbWasserassel1.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Wasserassel2.jpg" title="Wasserassel">
+                                <img src="img/Leitformen/LeitformenThumb/thumbWasserassel2.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Wasserassel3.jpg" title="Wasserassel">
+                                <img src="img/Leitformen/LeitformenThumb/thumbWasserassel3.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Wasserassel </span>
+                            <input type="number" ng-model="insectDatenEingabe[4]" placeholder="Anzahl Leitformen" name="insect5" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect5.$dirty && insect_form.insect5.$invalid">
+                                <small class="error" ng-show="insect_form.insect5.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect5.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect5.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Egel1.jpg" title="Egel 1">
+                                <img src="img/Leitformen/LeitformenThumb/thumbEgel1.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Egel2.jpg" title="Egel 2">
+                                <img src="img/Leitformen/LeitformenThumb/thumbEgel2.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Egel </span>
+                            <input type="number" ng-model="insectDatenEingabe[5]" placeholder="Anzahl Leitformen" name="insect6" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect6.$dirty && insect_form.insect6.$invalid">
+                                <small class="error" ng-show="insect_form.insect6.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect6.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect6.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Zuckmueckenlarve.jpg" title="Steinfliegenlarve 1">
+                                <img src="img/Leitformen/LeitformenThumb/thumbZuckmueckenlarve.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Zuckmückenlarven </span>
+                            <input type="number" ng-model="insectDatenEingabe[6]" placeholder="Anzahl Leitformen" name="insect7" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect7.$dirty && insect_form.insect7.$invalid">
+                                <small class="error" ng-show="insect_form.insect7.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect7.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect7.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Rattenschwanzlarve.jpg" title="Rattenschwanzlarve">
+                                <img src="img/Leitformen/LeitformenThumb/thumbRattenschwanzlarve.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Rattenschwanzlarven </span>
+                            <input type="number" ng-model="insectDatenEingabe[7]" placeholder="Anzahl Leitformen" name="insect8" min="0" max="5" required>
+                            <div class="error" ng-show="insect_form.insect8.$dirty && insect_form.insect8.$invalid">
+                                <small class="error" ng-show="insect_form.insect8.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect8.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect8.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 5 ein.  </small>
+                            </div>
+                        </label>
+
+
+                        <p>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Libellenlarvenjpg" title="Libellenlarve">
+                                <img src="img/Leitformen/LeitformenThumb/thumbLibellenlarven.png">
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Wasserkaefer.jpg" title="Wasserkäfer">
+                                <img src="img/Leitformen/LeitformenThumb/thumbWasserkaefer.png" alt="" />
+                            </a>
+                            <a class="fancybox" rel="group" href="img/Leitformen/LeitformenGross/Wasserskorpion.jpg" title="Wasserskorpion">
+                                <img src="img/Leitformen/LeitformenThumb/thumbWasserskorpion.png" alt="" />
+                            </a>
+                        </p>
+
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">weitere kleine Wirbellose (Strudelwürmer, Libellenlarven, etc.)  </span>
+                            <input type="number" ng-model="insectDatenEingabe[8]" placeholder="Anzahl Leitformen" name="insect9" min="0" max="10" required>
+                            <div class="error" ng-show="insect_form.insect9.$dirty && insect_form.insect9.$invalid">
+                                <small class="error" ng-show="insect_form.insect9.$error.required">
+                                 Falls du keine Leitformen gefunden hast, gib den Wert 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect9.$error.min">
+                                Gib einen Wert grösser als 0 ein. </small>
+                                <small class="error" ng-show="insect_form.insect9.$error.max">
+                                Dieser Wert ist zu unwahrscheinlich. Gib einen Wert kleiner als 10 ein.  </small>
+                            </div>
+                        </label>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+            <div id="speichern">
+
+                <ul>
+                    <li>
+
+                        <a class="button button-positive" ng-disabled="insect_form.$invalid" ng-click="insectDatenSpeichern(index)" href="#/tab/zusammenfassung" ng-click="storage()">Weiter</a>
+                        <a class="button button-positive" href="#/tab/river10" ng-click="loeschenLandschaft()">Zurück</a>
+                        <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

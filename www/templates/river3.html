@@ -1,0 +1,56 @@
+<ion-view title="Wassertiefen">
+
+    <ion-content padding="true">
+
+        <p>Beurteile den Bach nach folgenden Kriterien:</p>
+
+
+        <div id="river">
+
+            <ul>
+
+                <li>
+
+                    <img src="img/riverGross/3.1.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(1)" href="#/tab/river4">
+                stark wechselnde Wassertiefe
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/3.2.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(2)" href="#/tab/river4">
+                mindestens im Uferbereich variierend 
+            </a>
+                </li>
+                <li>
+
+                    <img src="img/riverGross/3.3.JPG">
+
+                    <a class="button button-block button-positive" ng-click="speichern(3)" href="#/tab/river4">
+               völlig einheitlich 
+
+            </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <div id="speichern">
+
+                    <a class="button button-positive" href="#/tab/river2" ng-click="loeschenLandschaft()">Zurück</a>
+                    <a class="button button-positive" ng-click="Abbrechen()">Abbrechen</a>
+                </div>
+
+            </li>
+
+        </ul>
+
+    </ion-content>
+</ion-view>
